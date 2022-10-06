@@ -1,0 +1,151 @@
+*{
+    font-family: 'Outfit', sans-serif;
+
+    font-weight: 700;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card{
+    width: 18rem;
+}
+
+.contenedorGeneral {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    justify-content: center;
+}
+
+.imgDesk{
+    display: none;
+}
+
+.card-title{
+    color: hsl(228, 12%, 48%) ;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.titulo{
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+}
+
+.card-text{
+    color: hsl(228, 12%, 48%) ;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.textos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+#card-precio{
+    color:hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: 'Fraunces';
+}
+
+#card-descuento{
+    color: hsl(228, 12%, 48%) ;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration:line-through;
+}
+
+.moverColor {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 5%;
+    font-size: 14px;
+    padding: 1rem;
+    color: white;
+    gap: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fraunces{
+    font-family: 'Fraunces';
+}
+
+@media screen and (min-width:1440px) {
+
+    .contenedorGeneral {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        margin-left: -6%;
+    }
+    .card-title {
+        color: hsl(228, 12%, 48%);
+        font-size: 14px;
+        font-weight: 500;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: stretch;
+        align-content: center;
+        margin-left: 12%;
+        width: 25rem;
+    }
+
+    .imgDesk {
+        display: flex;
+        width: 43%;
+        border-radius: 1%;
+        flex-wrap: nowrap;
+    }
+
+    .card-img-top{
+        display: none;
+    }
+
+    .card-body{
+        background-color: hsl(0, 0%, 100%);
+        width: 100%;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    body > div.contenedorGeneral > div > div > img{
+        background-color: hsl(30, 38%, 92%);;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
